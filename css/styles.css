@@ -15,6 +15,9 @@ li{
 #container{
   width: 100%;
   position: relative;
+  background: url(../img/ideas/2.jpg);
+  background-size: cover;
+  background-position: center center;
 
 }
 
@@ -54,10 +57,91 @@ h4, h5{
 #main-menu{
   display: block;
   position: absolute;
-  top: 200px;
+  top: 220px;
+  left: 35px;
 
 }
 
+
+
 #selfie{
-  
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: url(../img/selfie.png); 
+  background-size: cover;
+  background-position: center center;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+#selfie:hover{
+  width: 150px;
+  height: 150px;
+}
+
+
+#main-menu ul{
+  display: block;
+  position: relative;
+  top: 15px;
+  left: -45px;
+}
+
+#main-menu ul li{
+
+}
+
+#main-menu ul li a{
+  display: block;
+  width: 0;
+  margin: 20px 0;
+  background-color: #E32F21;
+  border-radius: 10px;
+  padding-left: 45px;
+  padding-right: 10px;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  height: 25px;
+  padding-top: 5px;
+
+}
+
+
+#main-menu ul li a:hover{
+  width: 150px;
+}
+
+#selfie img{
+  max-width: 200px;
+  height: auto;
+  display: block;
+  position: relative;
+  top: 15px;
+  left: 20px;
+}
+
+
+
+#slogans{
+    display: block;
+  position: absolute;
+  top: 390px;
+  right: 35px;
+}
+
+
+#slogans li{
+  display: block;
+  margin: 20px 0;
+  height: 25px;
+  padding-top: 5px;
+  background-color: #E32F21;
+   border-radius: 10px;
+     padding-left: 45px;
+  padding-right: 10px;
+  position: relative;
+  left: 45px;
+  width: 0;
 }
