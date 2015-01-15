@@ -1,14 +1,29 @@
-$(document).ready(function(){
-	$('#main-menu').find('ul').find('li').mouseover(function() {
-    	var opcion=$(this).text();
-    	console.log(opcion);
+ $(document).ready(function(){
 
-    	var lista=$('#slogans').find('ul').find('li').text();
-    	
+    $('.menu-link').click(function(){
 
-  })
-  .mouseout(function() {
-    	$(this).find('ul').find('li').css("width", "0");
-    	
-  });
+        
+        $('#content').fadeIn();
+
+        var selection=$(this).text();
+
+        $('#content').find('article').find('header').find('h2').empty();
+        $('#content').find('article').find('header').find('h2').append(selection);
+
+        $.ajax({
+            type:"GET",
+            url:"data/arrays.php",
+            data:{selection:selection},
+            success:function(data){
+
+                
+            }
+
+
+        });
+
+
+
+    })
+
 });
