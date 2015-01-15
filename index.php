@@ -21,6 +21,7 @@
                     <h2></h2>
                 </header>
                 <p></p>
+                <div id="switch-result"></div>
             </article>
         </section>
     </div>
