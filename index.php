@@ -13,6 +13,7 @@
     <link href="css/styles.css" rel="stylesheet">
     <link href="css/queries.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/tooltip.css" />
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -31,7 +32,12 @@
         <h5>Diseñador Web <br>Programador PHP</h5>
         
         <section id="main-menu">
-            <div id="selfie"></div>
+            <div id="selfie" class="tooltip tooltip-effect-1">
+                   <div class="tooltip-content">
+                    <p>Si, estoy tomando de una pipa de vidrio. Acá tenes otra foto comiendo un sandwich por si te quedaste con ganas</p>
+                    <img src="img/sand.jpg" alt="">
+                </div>
+            </div>
             <ul>
                 <li><a href="#">HOME</a></li>
                 <li><a href="#">ACERCA DE</a></li>
