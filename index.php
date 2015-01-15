@@ -25,37 +25,21 @@
   </head>
   <body>
     <div id="container">
-        <h1 class="animated fadeInDown">HORACIO GUTIERREZ</h1>
-        <h2 class="animated fadeInDown"><b>HORACIO GUTIERREZ</b></h2>
-        <h3 class="animated fadeIn">Diseñador Web - Programador PHP</h3>
-        <h4>HORACIO GUTIERREZ</h4>
-        <h5>Diseñador Web <br>Programador PHP</h5>
-        
+        <header>
+            <h1 class="animated fadeInDown">HORACIO GUTIERREZ</h1>
+            <h2 class="animated fadeInDown"><b>HORACIO GUTIERREZ</b></h2>
+            <h3 class="animated fadeInDown">Diseñador Web - Programador PHP</h3>
+        </header>
         <section id="main-menu">
-            <div id="selfie" class="tooltip tooltip-effect-1">
-                   <div class="tooltip-content">
-                    <p>Si, estoy tomando de una pipa de vidrio. Acá tenes otra foto comiendo un sandwich por si te quedaste con ganas</p>
-                    <img src="img/sand.jpg" alt="">
-                </div>
-            </div>
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ACERCA</a></li>
-                <li><a href="#">PORTFOLIO</a></li>
-                <li><a href="#">INTERACTIVO</a></li>
-                <li><a href="#">PRESUPUESTO</a></li>
-            </ul>
+            <nav>
+                <a href="#">HOME</a>
+                <a href="#">ACERCA</a>
+                <a href="#">PORTFOLIO</a>
+                <a href="#">TRY-ME</a>
+                <a href="#">CONTACTO</a>
+            </nav>
         </section>
-
-        <section id="slogans">
-            <ul>
-                
-                <li>Te interesó lo que viste y queres saber mas de mí? es normal...</li>
-                <li>Algunas muestras de lo que hago</li>
-                <li>Probá mis mas recientes locuras</li>
-                <li>Solicitá tu propio presupuesto a medida</li>
-            </ul>
-        </section>
+    
     </div>
   </body>
 </html>
