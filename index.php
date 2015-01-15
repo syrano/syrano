@@ -40,14 +40,14 @@
             </div>
             <ul>
                 <li><a href="#">HOME</a></li>
-                <li><a href="#">ACERCA DE</a></li>
+                <li><a href="#">ACERCA</a></li>
                 <li><a href="#">PORTFOLIO</a></li>
                 <li><a href="#">INTERACTIVO</a></li>
                 <li><a href="#">PRESUPUESTO</a></li>
             </ul>
         </section>
 
-        <section>
+        <section id="slogans">
             <ul>
                 
                 <li>Te interesó lo que viste y queres saber mas de mí? es normal...</li>
