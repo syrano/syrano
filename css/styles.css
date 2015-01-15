@@ -2,6 +2,15 @@
 
 body, html, #container{height: 100%;font-size: 100%; font-family: 'Montserrat', sans-serif; background-color: #292929; color: white;}
 
+a{
+  text-decoration: none;
+  color: white;
+}
+
+li{
+  list-style-type: none;
+}
+
 
 #container{
   width: 100%;
@@ -33,7 +42,22 @@ h3{
 
 }
 
-h3 span{
-  
+
+h4, h5{
+  width: 100%;
+  font-size: 8em;
+  opacity: 0.03;
+  text-align: center;
+
 }
 
+#main-menu{
+  display: block;
+  position: absolute;
+  top: 200px;
+
+}
+
+#selfie{
+  
+}

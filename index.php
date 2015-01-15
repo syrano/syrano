@@ -28,15 +28,16 @@
         <h2 class="animated fadeInDown"><b>HORACIO GUTIERREZ</b></h2>
         <h3 class="animated fadeIn">Diseñador Web - Programador PHP</h3>
         <h4>HORACIO GUTIERREZ</h4>
-        <h5>Diseñador Web - Programador PHP</h5>
-
+        <h5>Diseñador Web <br>Programador PHP</h5>
+        
         <section id="main-menu">
+            <div id="selfie"></div>
             <ul>
-                <li>HOME</li>
-                <li>ACERCA DE</li>
-                <li>PORTFOLIO</li>
-                <li>INTERACTIVO</li>
-                <li>PRESUPUESTO</li>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ACERCA DE</a></li>
+                <li><a href="#">PORTFOLIO</a></li>
+                <li><a href="#">INTERACTIVO</a></li>
+                <li><a href="#">PRESUPUESTO</a></li>
             </ul>
         </section>
 
