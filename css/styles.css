@@ -1,0 +1,39 @@
+*{padding: 0; margin: 0;}
+
+body, html, #container{height: 100%;font-size: 100%; font-family: 'Montserrat', sans-serif; background-color: #292929; color: white;}
+
+
+#container{
+  width: 100%;
+  position: relative;
+
+}
+
+
+
+h1{
+ 
+  text-align: center;
+  font-size: 5em;
+  opacity: 0.1;
+
+}
+
+h2, h3{
+  text-align: center;
+  position: relative;
+  top: -67px;
+  font-size: 3em;
+  -webkit-animation-delay:0.3s;
+}
+
+h3{
+  font-size: 2em;
+  opacity: 0.5;
+
+}
+
+h3 span{
+  
+}
+
