@@ -5,7 +5,7 @@
             <h1 class="animated fadeInDown">HORACIO GUTIERREZ</h1>
             <h2 class="animated fadeInDown">
                 <span class="element"><p>3</p>H</span>
-                <span class="element"><p>13</p>G</span>
+                <span class="element"><p>9</p>G</span>
             </h2>
             <h3 class="animated fadeInDown">Dandole vida a tus diseños</h3>
         </header>
@@ -57,10 +57,10 @@
             </div>
             <nav>
                 <h3>MENU</h3>
-                <a href="#">ACERCA</a>
-                <a href="#">PORTFOLIO</a>
-                <a href="#">TRY-ME</a>
-                <a href="#">CONTACTO</a>
+                <a href="#" class="menu-link">ACERCA</a>
+                <a href="#" class="menu-link">PORTFOLIO</a>
+                <a href="#" class="menu-link">TRY-ME</a>
+                <a href="#" class="menu-link">CONTACTO</a>
             </nav>
         </section>
 

@@ -132,12 +132,15 @@ header  h3{
 }
 
 #main-content nav h3{
-  width: 25%;
+  width: 20%;
   margin: 50px auto;
   transform: scale(0);
-  transition: all .3s ease;
+  transition-property: transform, padding-bottom;
+  transition-delay:0s, 0.05s; 
+  transition-duration:0.3s, 0.3s;
+  transition-timing-function: ease, ease;
   border-bottom: rgba(127,255,255,0.75) solid 4px;
-  padding-bottom: 5px;
+  padding-bottom: 35px;
   font-size: 2em;
 }
 
@@ -148,7 +151,7 @@ header  h3{
   display: block;
   margin: 25px 0px;
   position: relative;
-  top: 50px;
+  top: 40px;
   transform: scale(0);
   transition: all .3s ease;
   color: rgba(255,255,255,0.7);
@@ -156,6 +159,7 @@ header  h3{
 
 #main-content:hover h3{
   transform: scale(1);
+  padding-bottom: 5px;
 }
 
 #main-content:hover a{

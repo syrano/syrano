@@ -15,7 +15,7 @@
     <link href="css/animate.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/tooltip.css" />
     <script type="text/javascript" src="js/modernizr.js"></script>
-    <!--<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.js"></script>-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.js"></script>
 
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
