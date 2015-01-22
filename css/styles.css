@@ -371,9 +371,13 @@ header  h3{
   background-color: rgba(0,127,127, 0.8);
 }
 
+<<<<<<< HEAD
 .csstransforms .cn-wrapper li a:focus {
     position: fixed; 
 }
+=======
+
+>>>>>>> f-menuEffect
 
 .csstransforms .opened-nav li {
   -webkit-transition: all .3s ease .3s;
