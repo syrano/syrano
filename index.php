@@ -62,6 +62,13 @@
                 <a href="#" class="menu-link">TRY-ME</a>
                 <a href="#" class="menu-link">CONTACTO</a>
             </nav>
+             <article>
+                <header>
+                    <h2></h2>
+                </header>
+                <p></p>
+                <div id="switch-result"></div>
+            </article>
         </section>
 
         <!--<section id="content">

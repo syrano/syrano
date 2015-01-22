@@ -173,7 +173,9 @@ header  h3{
 }
 
 #main-content:hover{
-  background-color: #111;
+  background-color: rgba(0,127,127, 0.1);
+  box-shadow: 1px 1px 15px rgba(0,255,255,0.8);
+  
 }
 
 #one,#two,#three,#four,#five,#six,#onex,#twox,#threex,#fourx,#fivex,#sixx,#seven,#eight,#nine,#ten,#eleven,#twelve,#thirt,#fourt,#sevenx,#eightx,#ninex,#tenx,#elevenx,#twelvex,#thirtx,#fourtx{position: absolute; color: white}
