@@ -9,6 +9,21 @@
             </h2>
             <h3 class="animated fadeInDown">Dandole vida a tus diseños</h3>
         </header>
+        <section id="main-menu">
+           
+          <!--<button class="cn-button" id="cn-button">Menu</button>
+                <div class="cn-wrapper" id="cn-wrapper">
+                    <ul>
+                        <li><a href="#"><span></span></a></li>
+                        <li><a href="#"><span>Tutorials</span></a></li>
+                        <li><a href="#"><span>Articles</span></a></li>
+                        <li><a href="#"><span></span></a></li>
+                        <li><a href="#"><span>Plugins</span></a></li>
+                        <li><a href="#"><span>Contact</span></a></li>
+                        <li><a href="#"><span></span></a></li>
+                     </ul>
+                </div>-->
+        </section>
         <section id="main-content">
             <div id="nucleo">
                 <div id="one">&#9899;</div>
@@ -40,21 +55,15 @@
                 <div id="fourt">&#9899;</div>
                 <div id="fourtx">&#9899;</div>
             </div>
+            <nav>
+                <h3>MENU</h3>
+                <a href="#">ACERCA</a>
+                <a href="#">PORTFOLIO</a>
+                <a href="#">TRY-ME</a>
+                <a href="#">CONTACTO</a>
+            </nav>
         </section>
-        <section id="main-menu">
-          <button class="cn-button" id="cn-button">Menu</button>
-                <div class="cn-wrapper" id="cn-wrapper">
-                    <ul>
-                        <li><a href="#"><span></span></a></li>
-                        <li><a href="#"><span>Tutorials</span></a></li>
-                        <li><a href="#"><span>Articles</span></a></li>
-                        <li><a href="#"><span></span></a></li>
-                        <li><a href="#"><span>Plugins</span></a></li>
-                        <li><a href="#"><span>Contact</span></a></li>
-                        <li><a href="#"><span></span></a></li>
-                     </ul>
-                </div>
-        </section>
+
         <!--<section id="content">
             <article>
                 <header>
