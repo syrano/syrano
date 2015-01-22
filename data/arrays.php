@@ -2,7 +2,7 @@
 
 <?php 
 	
-	$selection=$_GET['selection'];
+	$selection=$_POST['selection'];
 
 
 

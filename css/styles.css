@@ -174,9 +174,40 @@ header  h3{
 
 #main-content:hover{
   background-color: rgba(0,127,127, 0.1);
-  box-shadow: 1px 1px 15px rgba(0,255,255,0.8);
+  box-shadow: 1px 1px 25px rgba(0,255,255,0.8);
   
 }
+
+#main-content:hover article{
+  opacity: 0.3;
+}
+
+#main-content article{
+  
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+
+#switch-result{
+  width: 90%;
+  margin: 30px auto;
+  color: white;
+
+}
+
+#main-content article h3{
+  text-align: left;
+  width: 90%;
+  margin: 30px auto;
+}
+
+
 
 #one,#two,#three,#four,#five,#six,#onex,#twox,#threex,#fourx,#fivex,#sixx,#seven,#eight,#nine,#ten,#eleven,#twelve,#thirt,#fourt,#sevenx,#eightx,#ninex,#tenx,#elevenx,#twelvex,#thirtx,#fourtx{position: absolute; color: white}
 #onex,#twox,#threex,#fourx,#fivex,#sixx,

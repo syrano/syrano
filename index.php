@@ -64,7 +64,7 @@
             </nav>
              <article>
                 <header>
-                    <h2></h2>
+                    <h3></h3>
                 </header>
                 <p></p>
                 <div id="switch-result"></div>
