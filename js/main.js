@@ -1,48 +1,25 @@
- $(document).ready(function(){
+(function(){
 
-    $('.menu-link').click(function(){
+    var button = document.getElementById('cn-button'),
+    wrapper = document.getElementById('cn-wrapper');
 
-        
-        $('#content').fadeIn();
+    //open and close menu when the button is clicked
+    var open = false;
+    button.addEventListener('click', handler, false);
 
-        var selection=$(this).text();
+    function handler(){
+      if(!open){
+        this.innerHTML = "Close";
+        classie.add(wrapper, 'opened-nav');
+      }
+      else{
+        this.innerHTML = "Menu";
+        classie.remove(wrapper, 'opened-nav');
+      }
+      open = !open;
+    }
+    function closeWrapper(){
+        classie.remove(wrapper, 'opened-nav');
+    }
 
-        $('#content').find('article').find('header').find('h2').empty();
-        $('#content').find('article').find('header').find('h2').append(selection);
-
-        $.ajax({
-            type:"GET",
-            url:"data/arrays.php",
-            data:{selection:selection},
-            success:function(data){
-                $('#content').find('p').empty();
-                $('#content').find('p').append(data);
-
-                switch(selection) {
-                            case 'ACERCA':
-                                $('#switch-result').empty();
-                                $('#switch-result').append("<div class='circle'></div> <div class='circle'></div> <div class='circle'></div>");
-                                break;
-                            case 'PORTFOLIO':
-                               $('#switch-result').empty();
-                                $('#switch-result').append("chau");
-                                break;
-                                case 'TRY-ME':
-                                $('#switch-result').empty();
-                                $('#switch-result').append("puto");
-                                break;
-                                case 'CONTACTO':
-                                $('#switch-result').empty();
-                                $('#switch-result').append("forro");
-                                break;
-                                    }
-            }
-
-
-        });
-
-
-
-    })
-
-});
+})();

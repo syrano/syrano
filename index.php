@@ -42,13 +42,18 @@
             </div>
         </section>
         <section id="main-menu">
-            <nav>
-                <a href="index.php"><span>HOME</span></a>
-                <a class="menu-link" href="#"><span>ACERCA</span></a>
-                <a class="menu-link" href="#"><span>PORTFOLIO</span></a>
-                <a class="menu-link" href="#"><span>TRY-ME</span></a>
-                <a class="menu-link" href="#"><span>CONTACTO</span></a>
-            </nav>
+          <button class="cn-button" id="cn-button">Menu</button>
+                <div class="cn-wrapper" id="cn-wrapper">
+                    <ul>
+                        <li><a href="#"><span></span></a></li>
+                        <li><a href="#"><span>Tutorials</span></a></li>
+                        <li><a href="#"><span>Articles</span></a></li>
+                        <li><a href="#"><span></span></a></li>
+                        <li><a href="#"><span>Plugins</span></a></li>
+                        <li><a href="#"><span>Contact</span></a></li>
+                        <li><a href="#"><span></span></a></li>
+                     </ul>
+                </div>
         </section>
         <!--<section id="content">
             <article>
@@ -61,10 +66,8 @@
         </section>-->
 
     </div>
-    <script type="text/javascript">
-
-   
-
-    </script>
+     
+    <script type="text/javascript" src="js/classie.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>
