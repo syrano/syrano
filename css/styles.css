@@ -87,6 +87,10 @@ header  h3{
   font-size: 1.3em
 }
 
+#result{
+  z-index: 999;
+}
+
 #main-content{
   width: 500px;
   height: 500px;
@@ -111,7 +115,7 @@ header  h3{
   margin: auto;
   height: 100%;
   transition: all .3s ease;
-
+  z-index: 10;
 }
 
 
@@ -205,8 +209,50 @@ header  h3{
   text-align: left;
   width: 90%;
   margin: 30px auto;
+  font-size: 2em
+}
+#switch{
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  z-index: 999;
 }
 
+#switch div.circle{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: white solid 1px;
+  display: inline-block;
+  margin: 40px 30px;
+  z-index: 999;
+}
+
+#switch div:nth-child(1){
+  background: url(../img/bebe.png);
+  background-size: cover;
+  background-position: center center;
+}
+
+#switch div:nth-child(2){
+  background: url(../img/medio.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+#switch div:nth-child(3){
+  background: url(../img/selfie.png);
+  background-size: cover;
+  background-position: center center;
+}
+
+.item{
+  width: 250px;
+  height: 250px;
+  display: inline-block;
+  margin:  30px;
+  border: white solid 1px;
+}
 
 
 #one,#two,#three,#four,#five,#six,#onex,#twox,#threex,#fourx,#fivex,#sixx,#seven,#eight,#nine,#ten,#eleven,#twelve,#thirt,#fourt,#sevenx,#eightx,#ninex,#tenx,#elevenx,#twelvex,#thirtx,#fourtx{position: absolute; color: white}

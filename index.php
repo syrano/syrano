@@ -62,13 +62,14 @@
                 <a href="#" class="menu-link">TRY-ME</a>
                 <a href="#" class="menu-link">CONTACTO</a>
             </nav>
-             <article>
+             <article id="result">
                 <header>
                     <h3></h3>
                 </header>
-                <p></p>
                 <div id="switch-result"></div>
+                <div id="switch"></div>
             </article>
+            
         </section>
 
         <!--<section id="content">

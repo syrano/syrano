@@ -23,6 +23,22 @@
 //     }
 
 // })();
+  //Esto me devuelve el container a redondo con click afuera 
+  $(document).mouseup(function (e)
+  {
+    var container = $('#main-content');
+
+    if (!container.is(e.target) 
+        && container.has(e.target).length === 0)
+    {
+        container.css("width", "500px");
+        container.css("height", "500px");
+        container.css("border-radius", "50%");
+        $('#switch-result').empty();
+        $('#main-content').find('article').find('h3').empty();
+        $('#switch').empty();
+    }
+  });
 
 
 $(document).ready(function(){
@@ -41,25 +57,40 @@ $(document).ready(function(){
         var texto=data;
         $('#main-content').find('article').find('h3').html(selection);
         $('#switch-result').html(texto);
+
+        switch(selection) {
+                      case "ACERCA":
+                        $('#switch').empty();
+                        $('#switch').append("<div class='circle'></div><div class='circle'></div><div class='circle'></div>");
+                          break;
+                      case "PORTFOLIO":
+                          $.ajax({
+                          type:"POST",
+                          url:"data/template.php",
+                          data:{selection:"PORTFOLIO"},
+                          success:function(data){
+                            $('#switch').empty();
+                            
+                            $('#switch').append(data);
+                            $('#main-content').css("height", "900px");
+                          }
+                        });
+                          break;
+                      case "TRY-ME":
+                          console.log("test");
+                          break;
+                      case "CONTACTO":
+                          console.log("test");
+                          break;
+                   
+                  }
+
       }
     });
   });
 
 
-  //Esto me devuelve el container a redondo con click afuera 
-  $(document).mouseup(function (e)
-  {
-    var container = $('#main-content');
 
-    if (!container.is(e.target) 
-        && container.has(e.target).length === 0)
-    {
-        container.css("width", "500px");
-        container.css("border-radius", "50%");
-        $('#switch-result').empty();
-        $('#main-content').find('article').find('h3').empty();
-    }
-  });
 
 
 
