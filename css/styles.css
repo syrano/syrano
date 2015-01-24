@@ -155,7 +155,7 @@ header  h3{
   margin: 25px 0px;
   position: relative;
   top: 40px;
-  transform: scale(0);
+  opacity: 0;
   transition: all .3s ease;
   color: rgba(255,255,255,0.7);
 }
@@ -164,6 +164,7 @@ header  h3{
 #main-content nav a:hover{
   color: white;
   text-shadow: 2px 2px 15px rgba(127,255,255,0.75);
+  transform: scale(1.2);
 }
 
 #main-content article{

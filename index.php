@@ -64,7 +64,7 @@
             </nav>
              <article id="result">
                 <header>
-                    <h3></h3>
+                    <h3 class="animated fadeInDown"></h3>
                 </header>
                 <div id="switch-result"></div>
                 <div id="switch"></div>

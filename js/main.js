@@ -45,7 +45,7 @@ $(document).ready(function(){
   });
 
 
- 
+
 
 
 
@@ -56,7 +56,7 @@ $(document).ready(function(){
     $('#main-content').css("border-radius", 0);
     $('#main-content article').css("opacity", 1);
     $('#main-content').find('nav').find('h3').css("transform", "scale(0)");
-    $('#main-content').find('a').css("transform", "scale(0)");
+    $('#main-content').find('a').css("opacity", "0");
 
     var selection=$(this).text();
     $.ajax({
@@ -94,7 +94,7 @@ $(document).ready(function(){
                           
                           break;
                       case "CONTACTO":
-                          $('#switch').html('en construccion');
+                          $('#switch').html("<?php require('templates/contact.php') ?>");
                           
                           break;
                    
@@ -117,7 +117,7 @@ $(document).ready(function(){
       
       $('#main-content').find('h3').css("transform", "scale(1)");
       $('#main-content').find('h3').css("padding-bottom", "5px");
-      $('#main-content').find('a').css("transform", "scale(1)");
+      $('#main-content').find('a').css("opacity", 1);
       
 
 
@@ -130,9 +130,10 @@ $(document).ready(function(){
   .mouseleave(function() {
       $('#main-content').find('nav').find('h3').css("transform", "scale(0)");
       $('#main-content').find('h3').css("padding-bottom", "35px");
-      $('#main-content').find('a').css("transform", "scale(0)");
+      
       $('#main-content').css("background-color", "rgba(0,127,127, 0.1)");
       $('#main-content').css("box-shadow", "1px 1px 15px rgba(0,255,255,0.8)");
+      $('#main-content').find('a').css("opacity", 0);
   });
 
 
