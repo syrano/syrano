@@ -315,6 +315,51 @@ header  h3{
 
 }
 
+
+#contact_right{
+  
+  width: 100%;
+  text-align: left;
+  position: relative;
+  top: -30px;
+}
+
+
+#contact_right form div{
+  margin-top: 20px;
+}
+
+#contact_right form input, #contact_right form textarea{
+  width: 100%;
+  background-color: rgba(0,127,127, 0.1);
+  border: none;
+  height: 30px;
+  transition: all .3s ease;
+  color: white;
+
+}
+
+#contact_right form input:focus, #contact_right form textarea:focus{
+  background-color: rgba(0,127,127, 0.4);
+  box-shadow: 1px 1px 15px rgba(0,255,255,0.8);
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+#contact_right form textarea{
+  height: 90px;
+}
+
+#contact_right form input#button{
+  width: 20%;
+  float: right;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 1.3em;
+  cursor: pointer;
+  box-shadow: 1px 1px 15px rgba(0,255,255,0.8);
+}
+
 #one,#two,#three,#four,#five,#six,#onex,#twox,#threex,#fourx,#fivex,#sixx,#seven,#eight,#nine,#ten,#eleven,#twelve,#thirt,#fourt,#sevenx,#eightx,#ninex,#tenx,#elevenx,#twelvex,#thirtx,#fourtx{position: absolute; color: white}
 #onex,#twox,#threex,#fourx,#fivex,#sixx,
   #sevenx,#eightx,#ninex,#tenx,#elevenx,#twelvex,#thirtx,#fourtx{color: rgba(0,127,127, 0.4);}

@@ -41,6 +41,7 @@ $(document).ready(function(){
         $('#switch-result').empty();
         $('#main-content').find('article').find('h3').empty();
         $('#switch').empty();
+        $('#main-content').find('a').fadeIn();
     }
   });
 
@@ -52,11 +53,12 @@ $(document).ready(function(){
 
   //Esto me cambia el container a cuadrado
   $('.menu-link').click(function(){
+    $('#main-content').find('a').fadeOut();
     $('#main-content').css("width", "90%");
     $('#main-content').css("border-radius", 0);
     $('#main-content article').css("opacity", 1);
     $('#main-content').find('nav').find('h3').css("transform", "scale(0)");
-    $('#main-content').find('a').css("opacity", "0");
+    
 
     var selection=$(this).text();
     $.ajax({
@@ -94,8 +96,8 @@ $(document).ready(function(){
                           
                           break;
                       case "CONTACTO":
-                          $('#switch').html("<?php require('templates/contact.php') ?>");
-                          
+                          $('#switch').load('templates/contact.php');
+                          $('#main-content').css("height", "600px");
                           break;
                    
                   }
@@ -117,7 +119,9 @@ $(document).ready(function(){
       
       $('#main-content').find('h3').css("transform", "scale(1)");
       $('#main-content').find('h3').css("padding-bottom", "5px");
+      $('#main-content').find('a').fadeIn();
       $('#main-content').find('a').css("opacity", 1);
+      
       
 
 
