@@ -45,6 +45,9 @@ $(document).ready(function(){
   });
 
 
+ 
+
+
 
 
   //Esto me cambia el container a cuadrado
@@ -52,7 +55,7 @@ $(document).ready(function(){
     $('#main-content').css("width", "90%");
     $('#main-content').css("border-radius", 0);
     $('#main-content article').css("opacity", 1);
-    $('#main-content').find('h3').css("transform", "scale(0)");
+    $('#main-content').find('nav').find('h3').css("transform", "scale(0)");
     $('#main-content').find('a').css("transform", "scale(0)");
 
     var selection=$(this).text();
@@ -67,10 +70,12 @@ $(document).ready(function(){
 
         switch(selection) {
                       case "ACERCA":
+                      
                         $('#switch').empty();
-                        $('#switch').append("<div class='circle'></div><div class='circle'></div><div class='circle'></div>");
+                        $('#switch').append("<section id='acerca'><div class='circle'></div><div class='circle'></div><div class='circle'></div></section>");
                           break;
                       case "PORTFOLIO":
+                          
                           $.ajax({
                           type:"POST",
                           url:"data/template.php",
@@ -78,16 +83,19 @@ $(document).ready(function(){
                           success:function(data){
                             $('#switch').empty();
                             
-                            $('#switch').append(data);
-                            $('#main-content').css("height", "900px");
+                            $('#switch').append("<section id='portfolio'>"+data+"</section>");
+                            $('#main-content').css("height", "800px");
+                            $('#portfolio').addClass('flex');
                           }
                         });
                           break;
                       case "TRY-ME":
-                          console.log("test");
+                          $('#switch').html('en construccion');
+                          
                           break;
                       case "CONTACTO":
-                          console.log("test");
+                          $('#switch').html('en construccion');
+                          
                           break;
                    
                   }
@@ -97,20 +105,21 @@ $(document).ready(function(){
   });
 
   
- 
-
 
 
  $( "#main-content" )
+
   .mouseenter(function() {
       var menu= $('#switch').html();
+      $('#main-content').css("background-color", "rgba(0,127,127, 0.1)");
+      $('#main-content').css("box-shadow", "1px 1px 30px rgba(0,255,255,0.8)");
      if (menu=="") {
       
       $('#main-content').find('h3').css("transform", "scale(1)");
+      $('#main-content').find('h3').css("padding-bottom", "5px");
       $('#main-content').find('a').css("transform", "scale(1)");
-      $('#main-content:hover').css("background-color", "rgba(0,127,127, 0.1)");
-      $('#main-content:hover').css("box-shadow", "1px 1px 25px rgba(0,255,255,0.8)");
       
+
 
      } 
      else{
@@ -119,8 +128,11 @@ $(document).ready(function(){
 
   })
   .mouseleave(function() {
-       $('#main-content').find('nav').find('h3').css("transform", "scale(0)");
-       $('#main-content').find('a').css("transform", "scale(0)");
+      $('#main-content').find('nav').find('h3').css("transform", "scale(0)");
+      $('#main-content').find('h3').css("padding-bottom", "35px");
+      $('#main-content').find('a').css("transform", "scale(0)");
+      $('#main-content').css("background-color", "rgba(0,127,127, 0.1)");
+      $('#main-content').css("box-shadow", "1px 1px 15px rgba(0,255,255,0.8)");
   });
 
 
