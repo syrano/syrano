@@ -24,7 +24,11 @@
 
 // })();
   //Esto me devuelve el container a redondo con click afuera 
-  $(document).mouseup(function (e)
+
+
+$(document).ready(function(){
+
+    $(document).mouseup(function (e)
   {
     var container = $('#main-content');
 
@@ -41,7 +45,7 @@
   });
 
 
-$(document).ready(function(){
+
 
   //Esto me cambia el container a cuadrado
   $('.menu-link').click(function(){
