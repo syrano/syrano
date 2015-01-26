@@ -1,6 +1,6 @@
 <?php
  
-            $email_id="consultas@cabanaspylmaiken.com";
+            $email_id="horacio.estevez@gmail.com";
             $userName=$_POST['userName'];
             $userEmail=$_POST['userEmail'];
             $userPhone=$_POST['userPhone'];

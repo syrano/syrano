@@ -1,29 +1,4 @@
-// (function(){
-
-//     var button = document.getElementById('cn-button'),
-//     wrapper = document.getElementById('cn-wrapper');
-
-//     //open and close menu when the button is clicked
-//     var open = false;
-//     button.addEventListener('click', handler, false);
-
-//     function handler(){
-//       if(!open){
-//         this.innerHTML = "Close";
-//         classie.add(wrapper, 'opened-nav');
-//       }
-//       else{
-//         this.innerHTML = "Menu";
-//         classie.remove(wrapper, 'opened-nav');
-//       }
-//       open = !open;
-//     }
-//     function closeWrapper(){
-//         classie.remove(wrapper, 'opened-nav');
-//     }
-
-// })();
-  //Esto me devuelve el container a redondo con click afuera 
+//Esto me devuelve el container a redondo con click afuera 
 
 
 $(document).ready(function(){
@@ -61,20 +36,21 @@ $(document).ready(function(){
     
 
     var selection=$(this).text();
+
     $.ajax({
       type:"POST",
       url:"data/arrays.php",
       data:{selection:selection},
       success:function(data){
         var texto=data;
-        $('#main-content').find('article').find('h3').html(selection);
-        $('#switch-result').html(texto);
+        $('#main-content').find('article').find('h3').hide().html(selection).fadeIn();
+        $('#switch-result').hide().html(texto).fadeIn();
 
         switch(selection) {
                       case "ACERCA":
                       
                         $('#switch').empty();
-                        $('#switch').append("<section id='acerca'><div class='circle'></div><div class='circle'></div><div class='circle'></div></section>");
+                        $('#switch').hide().append("<section id='acerca'><div class='circle animated fadeInDown'></div><div class='circle animated fadeInDown'></div><div class='circle animated fadeInDown'></div></section>").fadeIn();
                           break;
                       case "PORTFOLIO":
                           
@@ -85,7 +61,7 @@ $(document).ready(function(){
                           success:function(data){
                             $('#switch').empty();
                             
-                            $('#switch').append("<section id='portfolio'>"+data+"</section>");
+                            $('#switch').hide().append("<section id='portfolio' class='animated fadeInFull2'>"+data+"</section>").fadeIn();
                             $('#main-content').css("height", "800px");
                             $('#portfolio').addClass('flex');
                           }

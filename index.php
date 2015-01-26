@@ -1,31 +1,16 @@
 <?php require('templates/header.php'); ?>
   <body>
     <div id="container">
-        <header>
-            <h1 class="animated fadeInDown">HORACIO GUTIERREZ</h1>
+        <header id="top-head">
+            <h1 class="animated fadeIn ">HORACIO GUTIERREZ</h1>
             <h2 class="animated fadeInDown">
                 <span class="element"><p>3</p>H</span>
                 <span class="element"><p>9</p>G</span>
             </h2>
             <h3 class="animated fadeInDown">Dandole vida a tus diseños</h3>
         </header>
-        <section id="main-menu">
-           
-          <!--<button class="cn-button" id="cn-button">Menu</button>
-                <div class="cn-wrapper" id="cn-wrapper">
-                    <ul>
-                        <li><a href="#"><span></span></a></li>
-                        <li><a href="#"><span>Tutorials</span></a></li>
-                        <li><a href="#"><span>Articles</span></a></li>
-                        <li><a href="#"><span></span></a></li>
-                        <li><a href="#"><span>Plugins</span></a></li>
-                        <li><a href="#"><span>Contact</span></a></li>
-                        <li><a href="#"><span></span></a></li>
-                     </ul>
-                </div>-->
-        </section>
-        <section id="main-content">
-            <div id="nucleo">
+        <section id="main-content" class="animated fadeInFull">
+            <div id="nucleo" class="animatedSlow fadeInNucleus">
                 <div id="one">&#9899;</div>
                 <div id="onex">&#9899;</div>
                 <div id="two">&#9899;</div>
@@ -66,25 +51,11 @@
                 <header>
                     <h3 class="animated fadeInDown"></h3>
                 </header>
-                <div id="switch-result"></div>
+                <div id="switch-result" class="animated fadeInFull2"></div>
                 <div id="switch"></div>
             </article>
-            
         </section>
-
-        <!--<section id="content">
-            <article>
-                <header>
-                    <h2></h2>
-                </header>
-                <p></p>
-                <div id="switch-result"></div>
-            </article>
-        </section>-->
-
     </div>
-     
-    <script type="text/javascript" src="js/classie.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>

@@ -9,11 +9,8 @@
     <title>Horacio Gutierrez - Diseño Web</title>
     
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
-    <link href="css/queries.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/tooltip.css" />
     <script type="text/javascript" src="js/modernizr.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.js"></script>
 

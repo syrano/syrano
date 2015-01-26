@@ -6,8 +6,16 @@ Copyright (c) 2014 Daniel Eden
 */
 
 .animated {
-  -webkit-animation-duration: 0.7s;
-          animation-duration: 0.7s;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+
+}
+
+.animatedSlow {
+  -webkit-animation-duration: 1.3s;
+          animation-duration: 1.3s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 
@@ -1082,12 +1090,12 @@ Copyright (c) 2014 Daniel Eden
 
 @-webkit-keyframes fadeIn {
   0% {opacity: 0;}
-  100% {opacity: 1;}
+  100% {opacity: 0.2;}
 }
 
 @keyframes fadeIn {
   0% {opacity: 0;}
-  100% {opacity: 1;}
+  100% {opacity: 0.2;}
 }
 
 .fadeIn {
@@ -1095,17 +1103,76 @@ Copyright (c) 2014 Daniel Eden
           animation-name: fadeIn;
 }
 
+
+@-webkit-keyframes fadeInNucleus {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes fadeInNucleus {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.fadeInNucleus {
+  -webkit-animation-name: fadeInNucleus;
+          animation-name: fadeInNucleus;
+}
+
+
+
+
+
+@-webkit-keyframes fadeInFull {
+  0% {opacity: 0;transform:scale(0);}
+  100% {opacity: 0.8;transform:scale(1)}
+}
+
+@keyframes fadeInFull {
+  0% {opacity: 0;transform:scale(0)}
+  100% {opacity: 0.8;transform:scale(1)}
+}
+
+.fadeInFull {
+  -webkit-animation-name: fadeInFull;
+          animation-name: fadeInFull;
+}
+
+
+
+@-webkit-keyframes fadeInFull2 {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes fadeInFull2 {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.fadeInFull2 {
+  -webkit-animation-name: fadeInFull2;
+          animation-name: fadeInFull2;
+}
+
+
+
+
 @-webkit-keyframes fadeInDown {
   0% {
     
-    -webkit-transform: translate3d(0, -150%, 0);
-            transform: translate3d(0, -150%, 0);
+    -webkit-transform: translate3d(0, -30%, 0);
+            transform: translate3d(0, -30%, 0);
+            opacity: 0;
+            
   }
 
   100% {
     
     -webkit-transform: none;
             transform: none;
+            opacity: 1;
+            
   }
 }
 
@@ -1114,6 +1181,7 @@ Copyright (c) 2014 Daniel Eden
     opacity: 0;
     -webkit-transform: translate3d(0, -100%, 0);
             transform: translate3d(0, -100%, 0);
+
   }
 
   100% {
