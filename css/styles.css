@@ -160,6 +160,8 @@ header h2 span p{position: absolute;font-size: 0.2em}
   text-align: left;
   position: relative;
   top: -30px;
+     animation-delay:1s;
+  -webkit-animation-delay:1s;
 }
 
 

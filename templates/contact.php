@@ -1,4 +1,4 @@
- <div id="contact_right">
+ <div id="contact_right" class="animated fadeInFull2">
                   <div class="contact-form">
                     
                         <form method="post" action="templates/contact.app.php">
