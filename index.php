@@ -1,54 +1,89 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Horacio Gutierrez - Diseño Web</title>
-    
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
-    <link href="css/queries.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
-  </head>
+<?php require('templates/header.php'); ?>
   <body>
     <div id="container">
-        <h1 class="animated fadeInDown">HORACIO GUTIERREZ</h1>
-        <h2 class="animated fadeInDown"><b>HORACIO GUTIERREZ</b></h2>
-        <h3 class="animated fadeIn">Diseñador Web - Programador PHP</h3>
-        <h4>HORACIO GUTIERREZ</h4>
-        <h5>Diseñador Web - Programador PHP</h5>
-
+        <header>
+            <h1 class="animated fadeInDown">HORACIO GUTIERREZ</h1>
+            <h2 class="animated fadeInDown">
+                <span class="element"><p>3</p>H</span>
+                <span class="element"><p>9</p>G</span>
+            </h2>
+            <h3 class="animated fadeInDown">Dandole vida a tus diseños</h3>
+        </header>
         <section id="main-menu">
-            <ul>
-                <li>HOME</li>
-                <li>ACERCA DE</li>
-                <li>PORTFOLIO</li>
-                <li>INTERACTIVO</li>
-                <li>PRESUPUESTO</li>
-            </ul>
+           
+          <!--<button class="cn-button" id="cn-button">Menu</button>
+                <div class="cn-wrapper" id="cn-wrapper">
+                    <ul>
+                        <li><a href="#"><span></span></a></li>
+                        <li><a href="#"><span>Tutorials</span></a></li>
+                        <li><a href="#"><span>Articles</span></a></li>
+                        <li><a href="#"><span></span></a></li>
+                        <li><a href="#"><span>Plugins</span></a></li>
+                        <li><a href="#"><span>Contact</span></a></li>
+                        <li><a href="#"><span></span></a></li>
+                     </ul>
+                </div>-->
+        </section>
+        <section id="main-content">
+            <div id="nucleo">
+                <div id="one">&#9899;</div>
+                <div id="onex">&#9899;</div>
+                <div id="two">&#9899;</div>
+                <div id="twox">&#9899;</div>
+                <div id="three">&#9899;</div>
+                <div id="four">&#9899;</div>
+                <div id="five">&#9899;</div>
+                <div id="six">&#9899;</div>
+                <div id="threex">&#9899;</div>
+                <div id="fourx">&#9899;</div>
+                <div id="fivex">&#9899;</div>
+                <div id="sixx">&#9899;</div>
+                <div id="seven">&#9899;</div>
+                <div id="sevenx">&#9899;</div>
+                <div id="eight">&#9899;</div>
+                <div id="eightx">&#9899;</div>
+                <div id="nine">&#9899;</div>
+                <div id="ninex">&#9899;</div>
+                <div id="ten">&#9899;</div>
+                <div id="tenx">&#9899;</div>
+                <div id="eleven">&#9899;</div>
+                <div id="elevenx">&#9899;</div>
+                <div id="twelve">&#9899;</div>
+                <div id="twelvex">&#9899;</div>
+                <div id="thirt">&#9899;</div>
+                <div id="thirtx">&#9899;</div>
+                <div id="fourt">&#9899;</div>
+                <div id="fourtx">&#9899;</div>
+            </div>
+            <nav>
+                <h3>MENU</h3>
+                <a href="#" class="menu-link">ACERCA</a>
+                <a href="#" class="menu-link">PORTFOLIO</a>
+                <a href="#" class="menu-link">TRY-ME</a>
+                <a href="#" class="menu-link">CONTACTO</a>
+            </nav>
+             <article>
+                <header>
+                    <h2></h2>
+                </header>
+                <p></p>
+                <div id="switch-result"></div>
+            </article>
         </section>
 
-        <section>
-            <ul>
-                
-                <li>Te interesó lo que viste y queres saber mas de mí? es normal...</li>
-                <li>Algunas muestras de lo que hago</li>
-                <li>Probá mis mas recientes locuras</li>
-                <li>Solicitá tu propio presupuesto a medida</li>
-            </ul>
-        </section>
+        <!--<section id="content">
+            <article>
+                <header>
+                    <h2></h2>
+                </header>
+                <p></p>
+                <div id="switch-result"></div>
+            </article>
+        </section>-->
+
     </div>
+     
+    <script type="text/javascript" src="js/classie.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>
